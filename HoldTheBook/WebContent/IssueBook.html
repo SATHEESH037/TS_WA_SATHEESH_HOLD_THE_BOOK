@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<style>
+.abc {
+	margin: 5% 40% 5%;
+	border-spacing: 5px;
+	background-color: powderblue;
+}
+</style>
+</head>
+<body>
+	<div id="pic">
+
+		<form class="abc" method="post" action="BookissueController">
+			<h3 style="text-align: center;">Issue Books</h3>
+			<hr>
+			<!-- <div class="form-group">
+				<label class="ml-2">Book id :</label> <input type="text"
+					class="form-control" name="book_id" required>
+			</div> -->
+			<div class="form-group">
+				<label class="ml-2">Book name :</label> <input type="text"
+					class="form-control" name="book_name" required>
+			</div>
+
+			<div class="form-group">
+				<label class="ml-2">Date_of_issue :</label> <input type="date"
+					class="form-control" name="date_of_issue" required>
+			</div>
+			<div class="form-group">
+				<lable class="ml-2">Due_date_of_return :</lable>
+				<input type="date" class="form-control" name="due_date" required>
+			</div>
+			<div class="form-group ml-5">
+				<input type="submit" name="submit" value="submit"> <input
+					type="reset" name="reset" value="reset">
+			</div>
+		</form>
+	</div>
+</body>
+</html>

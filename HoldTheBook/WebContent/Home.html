@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>lg-nav</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<style>
+body {
+	background-image: url("library_pic.jpg");
+	background-size: 100%;
+}
+
+.abc {
+	background: transparent;
+	border: 1px solid blue;
+	background-color: #F0A892;
+	margin-top: 15%;
+	margin-left: 70%;
+	margin-right: 5%;
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-info">
+		<a class="navbar-brand" href="#">Hold the book</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active"><a class="nav-link text-light"
+					href="#">About us<span class="sr-only">(current)</span></a></li>
+				<li class="nav-item"><a class="nav-link text-light ml-2"
+					href="#">Contact us</a></li>
+				<li class="nav-item"><a class="nav-link text-light ml-2"
+					href="Signup.html">Sign up</a></li>
+				<div class="dropdown">
+					<button class="btn btn-info dropdown-toggle" type="button"
+						id="dropdownMenuButton" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false">Librarian</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<a class="dropdown-item" href="#">Sign up</a> <a
+							class="dropdown-item" href="#">Log in</a>
+					</div>
+				</div>
+				<li class="nav-item"><a class="nav-link text-light ml-2"
+					href="L_home.html">Librarian</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<form class="abc" method="post" action="LoginController">
+		<h3 style="text-align: center;">Log in</h3>
+		<hr>
+		<div class="form-group">
+			<h5>Name</h5>
+			<input type="text" class="form-control" name="name" id="name"
+				placeholder="Username">
+		</div>
+		<div class="form-group">
+			<h5>Password</h5>
+			<input type="password" class="form-control" name="password"
+				id="password" placeholder="password">
+		</div>
+		<button type="submit" class="btn btn-info ml-5">Submit</button>
+	</form>
+</body>
+</html>
